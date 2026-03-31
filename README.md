@@ -1,152 +1,68 @@
-# Python Network Programming 2025
-
-A weekly lab-based journey from classical sockets to future networks. Building one network agreement in Python every week—simple first, then fragile, then strange.
-
-## Course Philosophy
-
-Networks are not cables and boxes. **They are agreements under uncertainty.** You already know IP addressing and routing. Now we program behavior.
-
-## Learning Path Overview
-
-| Week | Topic | Type | Core Concepts |
-|------|-------|------|---|
-| 1 | Client–Server Communication (TCP Unicast) | BASIC | TCP sockets, bind, listen, accept, connect, request–response |
-| 2 | UDP Communication (Connectionless Unicast) | BASIC | UDP sockets, datagrams, packet loss, no guarantees |
-| 3 | Broadcast Communication | BASIC | LAN broadcast scope, discovery, service advertisement |
-| 4 | Multicast Communication | BASIC | Group membership, multicast groups, selective delivery |
-| 5 | Peer-to-Peer Networking | BASIC | Symmetric roles, dynamic ports, no central server |
-| 6 | Ad-Hoc Networking (MANET Simulation) | BASIC | Neighbor discovery, routing, TTL, improvised networks |
-| 7 | Store-and-Forward Communication | BASIC | Message queues, retry logic, persistent buffers |
-| 8 | Opportunistic Routing | BASIC | Probability-based forwarding, encounter routing |
-| 9 | Bio-Inspired Networking | ADVANCED | Pheromone routing, reinforcement learning, adaptive paths |
-| 10 | Quantum-Inspired Networking | ADVANCED | No-cloning, one-time tokens, quantum-secure concepts |
-
-## 📋 Kanban: Implementation Checklist
-
-### ✅ Completed Implementations
-- [x] Week 1: TCP Client–Server (server.py, server_threaded.py, client.py)
-- [x] Week 2: UDP Unicast (sender.py, receiver.py)
-- [x] Week 3: UDP Broadcast (broadcaster.py, listener.py)
-- [x] Week 4: UDP Multicast (sender.py, receiver.py)
-- [x] Week 5: Peer-to-Peer (peer.py)
-- [x] Week 6: MANET Phase-1 (node.py with random port support)
-- [x] Week 7: Store-and-Forward Phase-1 (node.py, message_queue.py)
-
-### 🚧 In Progress / Planning
-- [ ] Week 8: Opportunistic Routing implementation
-- [ ] Week 9: Bio-Inspired Networking (pheromone routing)
-- [ ] Week 10: Quantum-Inspired Networking (conceptual)
-
-### 📦 Codebase Structure
+# Network-Portfolio
 
 ```
-networkprogramming2025/
-├── week01-tcp-client-server-basic/
-│   ├── server.py                 (TCP server)
-│   ├── server_threaded.py        (Multi-threaded server)
-│   ├── client.py                 (TCP client)
-│   ├── config.py                 (Configuration)
-│   ├── logger.py                 (Logging)
-│   └── test_concurrent.py        (Unit tests)
-├── week02-udp-unicast-basic/
-│   ├── sender.py                 (UDP sender)
-│   ├── receiver.py               (UDP receiver)
-│   └── config.py
-├── week03-udp-broadcast-basic/
-│   ├── broadcaster.py            (Broadcast sender)
-│   ├── listener.py               (Broadcast receiver)
-│   └── config.py
-├── week04-udp-multicast-basic/
-│   ├── sender.py                 (Multicast sender)
-│   ├── receiver.py               (Multicast receiver)
-│   └── config.py
-├── week05-peer-to-peer-basic/
-│   ├── peer.py                   (P2P node)
-│   └── config.py
-├── week06-manet-basic/
-│   ├── node.py                   (MANET node)
-│   ├── config.py
-│   └── phase-1-random-port/      (Random port variant)
-│       ├── node.py
-│       └── config.py
-├── week07-store-forward-basic/
-│   ├── node.py                   (Store-forward node)
-│   ├── message_queue.py          (Queue implementation)
-│   ├── config.py
-│   └── phase-1-random-port/      (Random port variant)
-│       ├── node.py
-│       ├── message_queue.py
-│       └── config.py
-└── workshop/
-    ├── Curriculum- Network Programming 2025.md
-    └── [Lab guides and research notes]
+ชื่อ: นาย เพชรภิญโญ ธนศิรินรากร
+รหัสนักศึกษา: 673380073-7
+Section: 1
+kkumail: petpinyo.t@kkumail.com
 ```
 
-## Key Learning Outcomes by Week
+## สารบัญ
 
-### WEEK 1 – TCP Unicast
-- Understand TCP client–server architecture
-- Implement blocking socket communication
-- Relate TCP reliability to application behavior
-- **Traits**: Structured thinking, protocol discipline
+1. Personal Assignment and Lab 5
+2. Personal Portfolio
+3. Personal Labs 1-4
+4. Group Activities
+5. Final Project Artifacts
+6. Checkpoint Exam
 
-### WEEK 2 – UDP Unicast
-- Compare TCP vs UDP trade-offs
-- Implement connectionless communication
-- Observe and handle packet loss behavior
-- **Traits**: Risk awareness, performance analysis
-
-### WEEK 3 – Broadcast
-- Understand LAN broadcast scope
-- Implement discovery mechanisms
-- **Real-world usage**: DHCP, service discovery
-
-### WEEK 4 – Multicast
-- Join multicast groups
-- Differentiate multicast vs broadcast
-- Opt-in group communication
-- **Real-world usage**: Video streaming, pub/sub
-
-### WEEK 5 – Peer-to-Peer
-- Build symmetric network roles
-- Handle dynamic ports
-- **Real-world usage**: File sharing, decentralized systems
-
-### WEEK 6 – Ad-Hoc Networking (MANET)
-- Simulate neighbor discovery
-- Implement forwarding with TTL
-- **Extension**: AODV/OLSR concepts
-
-### WEEK 7 – Store-and-Forward
-- Implement message queues
-- Handle retry logic
-- **Extension**: Persistent storage, delay-tolerant networks
-
-### WEEK 8+ – Advanced Topics
-- Opportunistic routing (probability-based)
-- Bio-inspired networking (pheromone routing)
-- Quantum-inspired concepts (one-time tokens, secure messaging)
-
-## Getting Started
-
-1. Navigate to any `week*` directory
-2. Configure your environment in `config.py`
-3. Run server/sender in one terminal
-4. Run client/receiver in another terminal
-5. Observe the network behavior
-
-Example (Week 1):
-```bash
-python server.py
-python client.py
-```
-
-## Philosophy Note
-
-> If your program never fails, it's lying.
-
-Networks are inherently uncertain. This curriculum teaches you to build programs that acknowledge failure, handle it, and communicate despite it.
+> **หมายเหตุ:**
+> โฟลเดอร์ `Week1-10` มี README แยกของแต่ละสัปดาห์ สามารถดูรายละเอียดของแต่ละสัปดาห์ได้ในโฟลเดอร์นั้น
 
 ---
 
-**Current Status**: Weeks 1-7 implemented with all core functionality. Weeks 8-10 ready for implementation." 
+## รายละเอียดแต่ละส่วน
+
+## Personal Assignment
+
+| Category      | Work                                      | Link                                                                                                                                   |
+| ------------- | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Lab           | LAB 1                                     | [View Document](https://docs.google.com/document/d/1jkz-JaACeRGjU30CwIruCyGPLB3ILq1YDNaqtowFxy8/edit?usp=sharing)                      |
+| Lab           | LAB 2                                     | [View Document](https://docs.google.com/document/d/12IeS-SJ54EOUCXwKGxzfJmovmsRQ5cawOSUWv9A_AMc/edit?usp=sharing)                      |
+| Lab           | LAB 3                                     | [View Packet](https://drive.google.com/file/d/1rYHGlSDX9TVnIWyPqgDCH8hHgxmsUDwB/view?usp=drive_link)                                   |
+| Lab           | LAB 4                                     | [View Document](https://docs.google.com/document/d/1zFzPQYUU0G5Xb0xZ7DLInq9Vja3_uHePdeQYvVarIvk/edit?usp=sharing)                      |
+| Network       | New Network                               | [View Folder](https://docs.google.com/document/d/1RlKOzi6_1D_aMJoCc1CtLWyhGcinBsCK11HxKJa_fEw/edit?usp=sharing)                        |
+| Topic         | Bio-Resonance Network Architecture (BRNA) | [View Project](https://docs.google.com/spreadsheets/d/1CNUvNDzp1wOz4_SKKNVL8qMvntCPes01GPiWZ3wQPDI/edit?gid=2003612682#gid=2003612682) |
+| Group Work    | sprint                                    | [View Folder](https://drive.google.com/drive/folders/1gbRwee_aSw-bD_yJJv6ukDJfBkmClzv-?usp=sharing)                                    |
+| Final Project | Artifacts                                 | [View Folder](https://github.com/lillianxhub/network-BRNA/)                                                                            |
+
+## Group Activities
+
+| Lab   | Link                                                                                                              |
+| ----- | ----------------------------------------------------------------------------------------------------------------- |
+| LAB 1 | [View Document](https://docs.google.com/document/d/1GvRGnrHQ3UX6XVG-0OCz8P06ICUWjNU1855V5hjKROU/edit?usp=sharing) |
+| LAB 2 | [View Document](https://docs.google.com/document/d/1x-AHUtz5p82qQR_umFChS_jfNv_Sv5SKy6_3biYn3iY/edit?usp=sharing) |
+| LAB 3 | [View Document](https://docs.google.com/document/d/1Phhl73vM3MA3_RfHyY_pVC0qkmAwj8XUY6RXZ_6HJVA/edit?usp=sharing) |
+| LAB 4 | [View Document](https://docs.google.com/document/d/1m_Oxc-5YxfSyyw7jYeG5MnqcZE2BhTdExkYR5sHxlxw/edit?usp=sharing) |
+| LAB 5 | [View Document]()                                                                                                 |
+
+## Project Code
+
+| Project                                  | Link                                                  |
+| ---------------------------------------- | ----------------------------------------------------- |
+| Bio-resonance-network-architecture(BRNA) | [Github](https://github.com/lillianxhub/network-BRNA) |
+
+## Certificate
+
+<img width="820" height="552" alt="image" src="https://github.com/user-attachments/files/26363653/Certificate.pdf" />
+
+## Checkpoint Exam
+
+<img width="1834" height="290" alt="Checkpoint" src="https://github.com/user-attachments/assets/3d157933-7e8c-4a0f-8093-c14d7a5bb0e6" />
+
+---
+
+## หมายเหตุเพิ่มเติม
+
+- สามารถดูรายละเอียดของแต่ละสัปดาห์ในโฟลเดอร์ `Week1-10` ซึ่งแต่ละสัปดาห์จะมี README แยกของตัวเอง
+- หากต้องการดูรายละเอียดเพิ่มเติม สามารถเข้าไปที่ README ของแต่ละโฟลเดอร์
