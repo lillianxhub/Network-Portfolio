@@ -25,16 +25,16 @@ kkumail: petpinyo.t@kkumail.com
 
 ## Personal Assignment
 
-| Category      | Work                                      | Link                                                                                                                                   |
-| ------------- | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| Lab           | LAB 1                                     | [View Document](https://docs.google.com/document/d/1jkz-JaACeRGjU30CwIruCyGPLB3ILq1YDNaqtowFxy8/edit?usp=sharing)                      |
-| Lab           | LAB 2                                     | [View Document](https://docs.google.com/document/d/12IeS-SJ54EOUCXwKGxzfJmovmsRQ5cawOSUWv9A_AMc/edit?usp=sharing)                      |
-| Lab           | LAB 3                                     | [View Packet](https://drive.google.com/file/d/1rYHGlSDX9TVnIWyPqgDCH8hHgxmsUDwB/view?usp=drive_link)                                   |
-| Lab           | LAB 4                                     | [View Document](https://docs.google.com/document/d/1zFzPQYUU0G5Xb0xZ7DLInq9Vja3_uHePdeQYvVarIvk/edit?usp=sharing)                      |
-| Network       | New Network                               | [View Folder](https://docs.google.com/document/d/1RlKOzi6_1D_aMJoCc1CtLWyhGcinBsCK11HxKJa_fEw/edit?usp=sharing)                        |
-| Topic         | Bio-Resonance Network Architecture (BRNA) | [View Project](https://docs.google.com/spreadsheets/d/1CNUvNDzp1wOz4_SKKNVL8qMvntCPes01GPiWZ3wQPDI/edit?gid=2003612682#gid=2003612682) |
-| Group Work    | sprint                                    | [View Folder](https://drive.google.com/drive/folders/1gbRwee_aSw-bD_yJJv6ukDJfBkmClzv-?usp=sharing)                                    |
-| Final Project | Artifacts                                 | [View Folder](https://github.com/lillianxhub/network-BRNA/)                                                                            |
+| Category      | Work                                      | Link                                                                                                              |
+| ------------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Lab           | LAB 1                                     | [View Document](https://docs.google.com/document/d/1jkz-JaACeRGjU30CwIruCyGPLB3ILq1YDNaqtowFxy8/edit?usp=sharing) |
+| Lab           | LAB 2                                     | [View Document](https://docs.google.com/document/d/12IeS-SJ54EOUCXwKGxzfJmovmsRQ5cawOSUWv9A_AMc/edit?usp=sharing) |
+| Lab           | LAB 3                                     | [View Packet](https://drive.google.com/file/d/1rYHGlSDX9TVnIWyPqgDCH8hHgxmsUDwB/view?usp=drive_link)              |
+| Lab           | LAB 4                                     | [View Document](https://docs.google.com/document/d/1zFzPQYUU0G5Xb0xZ7DLInq9Vja3_uHePdeQYvVarIvk/edit?usp=sharing) |
+| Network       | New Network                               | [View Folder](https://docs.google.com/document/d/1RlKOzi6_1D_aMJoCc1CtLWyhGcinBsCK11HxKJa_fEw/edit?usp=sharing)   |
+| Topic         | Bio-Resonance Network Architecture (BRNA) | [View Project](https://github.com/lillianxhub/network-BRNA)                                                       |
+| Group Work    | sprint                                    | [View Folder](https://drive.google.com/drive/folders/1gbRwee_aSw-bD_yJJv6ukDJfBkmClzv-?usp=sharing)               |
+| Final Project | Artifacts                                 | [View Folder](https://drive.google.com/drive/folders/1qI7NqWrkfFOjIrTsQoXtY9t3QC-wfDfa)                           |
 
 ## Group Activities
 
@@ -48,9 +48,9 @@ kkumail: petpinyo.t@kkumail.com
 
 ## Project Code
 
-| Project                                  | Link                                                  |
-| ---------------------------------------- | ----------------------------------------------------- |
-| Bio-resonance-network-architecture(BRNA) | [Github](https://github.com/lillianxhub/network-BRNA) |
+| Project                                   | Link                                                  |
+| ----------------------------------------- | ----------------------------------------------------- |
+| Bio-Resonance Network Architecture (BRNA) | [Github](https://github.com/lillianxhub/network-BRNA) |
 
 ## Certificate
 
