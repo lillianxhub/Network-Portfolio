@@ -44,7 +44,7 @@ kkumail: petpinyo.t@kkumail.com
 | LAB 2 | [View Document](https://docs.google.com/document/d/1x-AHUtz5p82qQR_umFChS_jfNv_Sv5SKy6_3biYn3iY/edit?usp=sharing) |
 | LAB 3 | [View Document](https://docs.google.com/document/d/1Phhl73vM3MA3_RfHyY_pVC0qkmAwj8XUY6RXZ_6HJVA/edit?usp=sharing) |
 | LAB 4 | [View Document](https://docs.google.com/document/d/1m_Oxc-5YxfSyyw7jYeG5MnqcZE2BhTdExkYR5sHxlxw/edit?usp=sharing) |
-| LAB 5 | [View Document]()                                                                                                 |
+| LAB 5 | [View Document](https://docs.google.com/document/d/1A-xfBmVaj-JzfD-0lBVZgm69meq5eyg90wYTqZQWRxI/edit?usp=sharing) |
 
 ## Project Code
 
