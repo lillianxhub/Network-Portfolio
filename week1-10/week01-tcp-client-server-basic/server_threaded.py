@@ -42,6 +42,7 @@ def start_threaded_server():
         log_info(f"Threaded server listening on {HOST}:{PORT}")
         
         while True:
+            # We don't use timeout here for simplicity, but in production we might
             try:
                 conn, addr = server_socket.accept()
                 client_thread = threading.Thread(target=handle_client, args=(conn, addr))

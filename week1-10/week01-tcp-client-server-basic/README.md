@@ -9,7 +9,6 @@ This lab introduces socket programming through the most fundamental network mode
 ## Learning Outcomes
 
 By completing this week, you will:
-
 - ✅ Understand TCP client–server architecture
 - ✅ Implement blocking socket communication
 - ✅ Relate TCP reliability to application behavior
@@ -17,15 +16,15 @@ By completing this week, you will:
 
 ## Key Concepts
 
-| Concept                      | Description                                              |
-| ---------------------------- | -------------------------------------------------------- |
-| **TCP Sockets**              | Ordered, reliable, connection-based communication        |
-| **bind()**                   | Attach socket to a local address:port                    |
-| **listen()**                 | Mark socket as willing to accept connections             |
-| **accept()**                 | Wait for and establish a client connection               |
-| **connect()**                | Initiate connection to a listening server                |
+| Concept | Description |
+|---------|-------------|
+| **TCP Sockets** | Ordered, reliable, connection-based communication |
+| **bind()** | Attach socket to a local address:port |
+| **listen()** | Mark socket as willing to accept connections |
+| **accept()** | Wait for and establish a client connection |
+| **connect()** | Initiate connection to a listening server |
 | **Request–Response Pattern** | Client asks, server answers; fundamental protocol rhythm |
-| **Blocking I/O**             | Operations wait until complete (simple, synchronous)     |
+| **Blocking I/O** | Operations wait until complete (simple, synchronous) |
 
 ## Repository Structure
 
@@ -61,7 +60,6 @@ python server.py
 ```
 
 Expected output:
-
 ```
 [SERVER] Listening on 127.0.0.1:5000
 [SERVER] Connection from ('127.0.0.1', XXXXX)
@@ -77,7 +75,6 @@ python client.py
 ```
 
 Expected output:
-
 ```
 [CLIENT] Connected to 127.0.0.1:5000
 [CLIENT] Sending: Hello Server
@@ -139,7 +136,6 @@ print("[SERVER] Closed connection")
 ```
 
 **Key Points**:
-
 - `socket.AF_INET`: IPv4 addressing
 - `socket.SOCK_STREAM`: TCP protocol
 - `bind()`: Must happen before listen()
@@ -177,7 +173,6 @@ client_socket.close()
 ```
 
 **Key Points**:
-
 - `connect()`: **Blocks until** server's accept() succeeds
 - `sendall()`: Guarantees all bytes sent (or exception)
 - `recv()`: **Blocks until** data arrives
@@ -199,7 +194,7 @@ def handle_client(conn, addr):
     data = conn.recv(BUFFER_SIZE)
     message = data.decode()
     print(f"[SERVER] Received: {message}")
-
+    
     reply = f"ACK: {message}"
     conn.sendall(reply.encode())
     conn.close()
@@ -224,13 +219,13 @@ while True:
 
 ## Common Mistakes & Interpretations
 
-| Mistake                     | Why It Happens                             | How to Debug                                                        |
-| --------------------------- | ------------------------------------------ | ------------------------------------------------------------------- |
-| **Missing `listen()`**      | Forget the server must advertise readiness | `socket error: (98) Address already in use` or immediate failure    |
-| **Port already in use**     | Previous server didn't close cleanly       | `netstat -ano` (Windows) or `lsof -i :5000` (Mac/Linux) to find PID |
-| **`recv()` blocks forever** | Server waits for client that never comes   | Check: Is server running? Did client actually connect?              |
-| **Empty message crashes**   | Forgot to check `if data:`                 | Receive returns empty bytes `b''` when peer closes                  |
-| **Encoding errors**         | String ↔ bytes conversion                  | Use `.encode()` and `.decode()` consistently                        |
+| Mistake | Why It Happens | How to Debug |
+|---------|---|---|
+| **Missing `listen()`** | Forget the server must advertise readiness | `socket error: (98) Address already in use` or immediate failure |
+| **Port already in use** | Previous server didn't close cleanly | `netstat -ano` (Windows) or `lsof -i :5000` (Mac/Linux) to find PID |
+| **`recv()` blocks forever** | Server waits for client that never comes | Check: Is server running? Did client actually connect? |
+| **Empty message crashes** | Forgot to check `if data:` | Receive returns empty bytes `b''` when peer closes |
+| **Encoding errors** | String ↔ bytes conversion | Use `.encode()` and `.decode()` consistently |
 
 ## Testing
 
@@ -313,8 +308,7 @@ Introduce **state, repetition, and responsibility** while staying inside TCP.
 
 ### Scenario
 
-Build a _helpdesk chat server_ where:
-
+Build a *helpdesk chat server* where:
 - Server runs indefinitely
 - Each client can send multiple messages (session)
 - Messages are logged with timestamps
@@ -337,7 +331,6 @@ Build a _helpdesk chat server_ where:
 ### Starter Code (Advanced)
 
 **server.py (chat version)**:
-
 ```python
 import socket
 import time
@@ -355,11 +348,11 @@ while True:
     data = conn.recv(BUFFER_SIZE)
     if not data:
         break
-
+    
     message = data.decode()
     timestamp = time.strftime('%H:%M:%S')
     print(f"[SERVER] @{timestamp} Client: {message}")
-
+    
     reply = f"[ACK @{timestamp}] {message}"
     conn.sendall(reply.encode())
 
@@ -368,7 +361,6 @@ server_socket.close()
 ```
 
 **client.py (chat version)**:
-
 ```python
 import socket
 from config import HOST, PORT, BUFFER_SIZE
@@ -413,13 +405,13 @@ The TCP ritual is not busywork. It is **protocol obedience**. Students who inter
 
 ## Debugging Checklist
 
-- [x] Server running in Terminal 1?
-- [x] Client can reach HOST:PORT?
-- [x] `listen(1)` before `accept()`?
-- [x] `recv()` handles empty messages?
-- [x] `sendall()` not just `send()`?
-- [x] Sockets closed before exit?
-- [x] No encoding/decoding errors?
+- [ ] Server running in Terminal 1?
+- [ ] Client can reach HOST:PORT?
+- [ ] `listen(1)` before `accept()`?
+- [ ] `recv()` handles empty messages?
+- [ ] `sendall()` not just `send()`?
+- [ ] Sockets closed before exit?
+- [ ] No encoding/decoding errors?
 
 ---
 

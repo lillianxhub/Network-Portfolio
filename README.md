@@ -54,7 +54,7 @@ kkumail: petpinyo.t@kkumail.com
 
 ## Certificate
 
-<img width="820" height="552" alt="image" src="https://github.com/user-attachments/files/26363653/Certificate.pdf" />
+<img width="820" height="552" alt="Certi" src="https://github.com/user-attachments/assets/d939c0c8-30b4-43a0-92ad-11820eacfa32" />
 
 ## Checkpoint Exam
 
